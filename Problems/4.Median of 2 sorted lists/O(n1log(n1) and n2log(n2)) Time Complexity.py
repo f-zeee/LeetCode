@@ -1,3 +1,6 @@
+#Time Complexity: O((n1)log(n1) +(n2)log(n2))
+#Space Complexity: O(N)
+
 class Solution:
     def findMedianSortedArrays(self, nums1, nums2):
         merge = sorted( nums1 + nums2 )
