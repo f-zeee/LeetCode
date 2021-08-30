@@ -14,6 +14,7 @@ class Solution:
                 res.append(i.val)
 
         res=sorted(res, reverse=True)
+        #we are sorting this is reverse order beacuse we have to return a linked list and my loop for creating a linked list traverses from the beginning
         nexti=None
         for i in res:
             nexti=ListNode(i,nexti)
