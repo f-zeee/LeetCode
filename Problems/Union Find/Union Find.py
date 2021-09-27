@@ -27,7 +27,7 @@ class UnionFind(object):
     def union(self, p, q):
         root_p, root_q = map(self.find, (p, q))
         if root_p == root_q: 
-            return
+            return #here we are simply returning, because they are already merged
         small, big = sorted([root_p, root_q], key=lambda x: self.sizes[x])
         self.parents[small] = big
         self.sizes[big] += self.sizes[small]    
